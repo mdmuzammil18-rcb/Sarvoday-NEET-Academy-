@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarvoday NEET Academy</title>
+    <meta name="description" content="A comprehensive management and learning platform for Sarvoday NEET Academy." />
+    
+    <!-- PWA & Mobile Enhancements -->
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Favicon (example, replace with actual icons) -->
+    <link rel="icon" href="/icons/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+<style>
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+  }
+  .animate-shake {
+    animation: shake 0.5s ease-in-out;
+  }
+  html, body {
+    height: 100%; /* Ensure html and body take full height */
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex; /* Make body a flex container */
+    flex-direction: column; /* Stack children vertically */
+  }
+  #root {
+     flex-grow: 1; /* Allow root to take available space */
+     display: flex; /* Make root a flex container for its children */
+     flex-direction: column; /* Ensure children of root stack vertically if needed */
+  }
+</style>
+</head>
+  <body class="min-h-screen flex flex-col items-center bg-slate-100 text-slate-900">
+    <div id="root" class="w-full flex-grow flex flex-col">
+      <!-- React app mounts here -->
+    </div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>

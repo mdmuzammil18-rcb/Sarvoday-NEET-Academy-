@@ -1,0 +1,24 @@
+{
+  "short_name": "Sarvoday",
+  "name": "Sarvoday NEET Academy",
+  "description": "A comprehensive management and learning platform for Sarvoday NEET Academy, supporting teachers and students.",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f1f5f9",
+  "theme_color": "#0ea5e9",
+  "orientation": "portrait-primary"
+}
